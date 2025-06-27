@@ -2,9 +2,9 @@ identity:
   author: "pragnyan_ramtha"
   name: "drug_researcher"
   label:
-    en_US: "drug_researcher"
-    zh_Hans: "drug_researcher"
-    pt_BR: "drug_researcher"
+    en_US: drug researcher
+    zh_Hans: 药物研究员
+    pt_BR: pesquisador de drogas
   description:
     en_US: "This plugin provides usage and common side effects for a given drug name."
     zh_Hans: "This plugin provides usage and common side effects for a given drug name."
