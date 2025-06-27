@@ -1,0 +1,52 @@
+version: 0.0.1
+type: plugin
+author: pragnyan_ramtha
+name: drug_researcher
+label:
+  en_US: drug_researcher
+  ja_JP: drug_researcher
+  zh_Hans: drug_researcher
+  pt_BR: drug_researcher
+description:
+  en_US: This plugin provides usage and common side effects for a given drug name.
+  ja_JP: This plugin provides usage and common side effects for a given drug name.
+  zh_Hans: This plugin provides usage and common side effects for a given drug name.
+  pt_BR: This plugin provides usage and common side effects for a given drug name.
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: true
+      rerank: true
+      tts: true
+      speech2text: false
+      moderation: false
+    endpoint:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576
+plugins:
+  tools:
+    - provider/drug_researcher.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-06-26T16:59:43.399596557Z
+privacy: PRIVACY.md
+repo: https://github.com/pragnyanramtha/dify-plugin-drug_researcher
+verified: false
